@@ -1,0 +1,16 @@
+spring:
+  data:
+    mongodb:
+      username: eugene
+      password: butkevych
+      host: localhost  # change to `mongodb` if running in a container
+      port: 27017
+      database: chat_app
+      authentication-database: admin  # optional, but correct
+
+server:
+  port: 8088
+logging:
+  level:
+    org.springframework.web: DEBUG
+    org.springframework.data.mongodb: DEBUG
